@@ -4,48 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <!--ШАПКА САЙТА-->
     <header>
       <nav>
-        <a href="index.html" aria-label="Логотип">
-          Web Studio
-        </a>
+        <a class="logo" href="./index.html"
+          ><span class="logo-prefix">Web</span> Studio</a
+        >
         <ul>
           <li>
-            <a href="">Студия</a>
+            <a class="studio" href="">Студия</a>
           </li>
           <li>
-            <a href="">Портфолио</a>
+            <a class="portfolio" href="">Портфолио</a>
           </li>
           <li>
-            <a href="">Контакты</a>
+            <a class="contacts" href="">Контакты</a>
           </li>
         </ul>
       </nav>
       <address>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="header-address" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+        <a class="header-address" href="tel:+380961111111">
+          +38 096 111 11 11</a
+        >
       </address>
     </header>
     <main>
       <!--HERO секция-->
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button>заказать-услугу</button>
+        <button class="hero-button">заказать-услугу</button>
       </section>
       <!--О НАС-->
       <section>
         <ul>
           <li>
-            <img src="./images/icon/vector.svg" alt="иконка_антенны" />
-            <h3>Внимание к деталям</h3>
-            <p>
+            <a href="">
+              <img src="./images/icon/vector.svg" alt="иконка_антенны"
+            /></a>
+            <h3 class="about-us-title">Внимание к деталям</h3>
+            <p class="paragraph-text">
               Идейные соображения, а также начало<br />
               повседневной работы по формированию<br />
               позиции.
@@ -53,30 +64,70 @@
           </li>
 
           <li>
-            <img src="./images/icon/vector-1.svg" alt="иконка_часов" />
-            <h3>Пунктуальность</h3>
-            <p>
+            <a href=""
+              ><img src="./images/icon/vector-1.svg" alt="иконка_часов"
+            /></a>
+            <h3 class="about-us-title">Пунктуальность</h3>
+            <p class="paragraph-text">
               Задача организации, в особенности же рамки и<br />
               место обучения кадров влечет за собой.
             </p>
           </li>
 
           <li>
-            <img src="./images/icon/vector-2.svg" alt="иконка_компьютера" />
-            <h3>Планирование</h3>
-            <p>
+            <a href="">
+              <img src="./images/icon/vector-2.svg" alt="иконка_компьютера"
+            /></a>
+            <h3 class="about-us-title">Планирование</h3>
+            <p class="paragraph-text">
               Равным образом консультация с широким<br />
               активом в значительной степени обуславливает.
             </p>
           </li>
 
           <li>
-            <img src="./images/icon/vector-3.svg" alt="иконка_космонавта" />
-            <h3>Современные технологии</h3>
-            <p>
+            <a href="">
+              <img src="./images/icon/vector-3.svg" alt="иконка_космонавта"
+            /></a>
+            <h3 class="about-us-title">Современные технологии</h3>
+            <p class="paragraph-text">
               Значимость этих проблем настолько очевидна,<br />
               что реализация плановых заданий.
             </p>
+          </li>
+        </ul>
+      </section>
+
+      <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
+      <section>
+        <h2 class="second-title">Чем мы занимаемся</h2>
+        <ul>
+          <li>
+            <h3 class="item-text">десктопные приложения</h3>
+            <img
+              src="./images/what_we_do/img.jpg"
+              alt="картинка ноутбука"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <h3 class="item-text">мобильные приложения</h3>
+            <img
+              src="./images/what_we_do/box.jpg"
+              alt="картинка смартфона"
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <h3 class="item-text">дизайнерские решения</h3>
+            <img
+              src="./images/what_we_do/img1.jpg"
+              alt="картинка монитора"
+              width="370"
+              height="294"
+            />
           </li>
         </ul>
       </section>
@@ -93,7 +144,7 @@
               height="260"
             />
             <h3>Николай Кучеренко</h3>
-            <p>Product Designer</p>
+            <p class="profession-text">Product Designer</p>
             <ul>
               <li><a href="" aria-label="иконка инстаграма"></a></li>
               <li><a href="" aria-label="иконка твиттера"></a></li>
@@ -110,7 +161,7 @@
               height="260"
             />
             <h3>Ольга Иванова</h3>
-            <p>Frontend Developer</p>
+            <p class="profession-text">Frontend Developer</p>
             <ul>
               <li><a href="" aria-label="иконка инстаграма"></a></li>
               <li><a href="" aria-label="иконка твиттера"></a></li>
@@ -126,7 +177,7 @@
               height="260"
             />
             <h3>Андрей Шевченко</h3>
-            <p>Marketing</p>
+            <p class="profession-text">Marketing</p>
             <ul>
               <li><a href="" aria-label="иконка инстаграма"></a></li>
               <li><a href="" aria-label="иконка твиттера"></a></li>
@@ -143,7 +194,7 @@
               height="260"
             />
             <h3>Иван Николаев</h3>
-            <p>UI Designer</p>
+            <p class="profession-text">UI Designer</p>
             <ul>
               <li><a href="" aria-label="иконка инстаграма"></a></li>
               <li><a href="" aria-label="иконка твиттера"></a></li>
@@ -154,86 +205,72 @@
         </ul>
       </section>
 
-      <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
+      <!--Постоянные клиенты-->
       <section>
+        <h2 class="third-title">Постоянные клиенты</h2>
         <ul>
           <li>
-            <h3>десктопные приложения</h3>
             <img
-              src="./images/what_we_do/img.jpg"
-              alt="картинка с ноутбуком"
-              width="370"
-              height="294"
+              src="./images/constant_client/logo_1.svg"
+              alt="иконка_квадрата"
             />
           </li>
           <li>
-            <h3>мобильные приложения</h3>
             <img
-              src="./images/what_we_do/box.jpg"
-              alt="картинка смартфона"
-              width="370"
-              height="294"
+              src="./images/constant_client/logo_2.svg"
+              alt="иконка_логотипа"
             />
           </li>
           <li>
-            <h3>дизайнерские решения</h3>
             <img
-              src="./images/what_we_do/img1.jpg"
-              alt="картинка монитора"
-              width="370"
-              height="294"
+              src="./images/constant_client/logo_3.svg"
+              alt="иконка_срезаный круг"
             />
           </li>
-        </ul>
-      </section>
-
-      <!--ПОСТОЯННЫЕ КЛИЕНТЫ-->
-      <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
           <li>
-            <a href="" aria-label="иконка_квадрата"></a>
+            <img
+              src="./images/constant_client/logo_4.svg"
+              alt="иконка_foster_peters"
+            />
           </li>
           <li>
-            <a href="" aria-label="иконка_логотипа"></a>
+            <img src="./images/constant_client/logo_5.svg" alt="иконка_BRAND" />
           </li>
           <li>
-            <a href="" aria-label="иконка_срезаный круг"></a>
-          </li>
-          <li>
-            <a href="" aria-label="иконка_foster_peters"></a>
-          </li>
-          <li>
-            <a href="" aria-label="иконка_BRAND"></a>
-          </li>
-          <li>
-            <a href="" aria-label="иконка_куба"></a>
+            <img src="./images/constant_client/logo_6.svg" alt="иконка_куба" />
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="" aria-label="Web Studio"> </a>
-      <address class="contacts-footer">
-        г. Киев, пр-т Леси Украинки,26
+      <a class="logo" href="./index.html"
+        ><span class="logo-prefix">Web</span> Studio</a
+      >
+      <address>
         <ul>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="location" href=""> г. Киев, пр-т Леси Украинки,26</a>
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer-address" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-address" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
-
-      <b>присоединяйтесь</b>
+      <b class="call">присоединяйтесь</b>
       <ul>
         <li><a href="" aria-label="иконка инстаграма"></a></li>
         <li><a href="" aria-label="иконка твиттера"></a></li>
         <li><a href="" aria-label="иконка фейсбука"></a></li>
         <li><a href="" aria-label="иконка линкедина "></a></li>
       </ul>
-      <b> Подпишитесь на рассылку</b>
+      <b class="call"> Подпишитесь на рассылку</b>
     </footer>
   </body>
 </html>
