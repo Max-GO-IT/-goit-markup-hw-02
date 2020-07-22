@@ -5,6 +5,12 @@ body {
 ul {
   list-style: none;
 }
+
+/*картинка не може бути більша ніж ширина блока*/
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*ШАПКА САЙТА*/
 .logo-prefix {
   color: #2196f3;
@@ -218,17 +224,65 @@ button:focus {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.list-of-works {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: #212121;
+
+/*ПОРТФОЛИО*/
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.portfolio-paragraph {
-  font-style: normal;
-  font-weight: normal;
+
+.portfolio-item {
+  width: 370px;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.portfolio-image {
+  height: 294px;
+}
+
+.portfolio-description {
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 28px;
+
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+
+  transform: translateY(100%); /*стартова позиція*/
+  transition: all 0.4s ease-out;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-title {
+  color: red;
+}
+
+.portfolio-link:hover .portfolio-description {
+  display: block;
+  transition: all 0.4s ease-out;
+  transform: translateY(0%); /*кінцева позиція*/
+}
+
+.portfolio-work {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
