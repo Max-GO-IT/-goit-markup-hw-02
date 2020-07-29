@@ -24,36 +24,26 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.header-list:hover {
+
+.nav-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
   color: #2196f3;
 }
-.studio {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
+
+.nav-link-active {
+  color: #2196f3;
 }
-.portfolio {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-}
-.contacts {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-}
+
 .header-address {
   font-style: normal;
   font-weight: 500;
@@ -62,6 +52,10 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+}
+.header-address:hover,
+.header-address:focus {
+  color: #2196f3;
 }
 
 /*HERO СЕКЦИЯ*/
@@ -213,27 +207,27 @@ button:focus {
 .button-section {
   display: flex;
 }
-.all {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-.portfolio-button-text {
-  font-style: normal;
+
+.portfolio-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+}
+.portfolio-button:hover,
+.portfolio-button:focus,
+.portfolio-button-active {
+  background: #2196f3;
+  color: #f5f5f5;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 /*ПОРТФОЛИО*/

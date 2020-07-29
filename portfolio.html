@@ -14,19 +14,21 @@
   <body>
     <!--ШАПКА САЙТА-->
     <header>
-      <nav>
-        <a class="logo" href="./index.html"
-          ><span class="logo-prefix">Web</span> Studio</a
-        >
+      <a class="logo" href="./index.html"
+        ><span class="logo-prefix">Web</span> Studio</a
+      >
+      <nav class="nav">
         <ul>
           <li>
-            <a class="studio" href=""><span class="header-list">Студия</span></a>
+            <a class="nav-link" href="./index.html">Студия</a>
           </li>
           <li>
-            <a class="portfolio" href=""><span class="header-list">Портфолио</span></a>
+            <a class="nav-link nav-link-active" href="./portfolio.html"
+              >Портфолио</a
+            >
           </li>
           <li>
-            <a class="contacts" href=""><span class="header-list">Контакты</span></a>
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -40,19 +42,17 @@
       </address>
     </header>
     <main>
-      <!--СЕКЦИЯ КНОПОК-->
-      <section>
-        <ul class="button-section">
-          <li><span class="all">Все</span></li>
-          <li class="portfolio-button-text">Веб-сайты</li>
-          <li class="portfolio-button-text">Приложения</li>
-          <li class="portfolio-button-text">Дизайн</li>
-          <li class="portfolio-button-text">Маркетинг</li>
-        </ul>
-      </section>
-
       <!--СЕКЦИЯ ПОРТФОЛИО-->
       <section class="portfolio">
+        <ul class="button-section">
+          <li>
+            <a href="#" class="portfolio-button portfolio-button-active">Все</a>
+          </li>
+          <li><a href="#" class="portfolio-button">Веб-сайты</a></li>
+          <li><a href="#" class="portfolio-button">Приложения</a></li>
+          <li><a href="#" class="portfolio-button">Дизайн</a></li>
+          <li><a href="#" class="portfolio-button">Маркетинг</a></li>
+        </ul>
         <ul class="portfolio-items">
           <li class="portfolio-item">
             <a href="#" class="portfolio-link">
@@ -194,7 +194,7 @@
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <h3 class="portfolio-title">Проект LAB<h3>
+              <h3 class="portfolio-title">Проект LAB</h3>
               <p class="portfolio-work">Маркетинг</p>
             </a>
           </li>
