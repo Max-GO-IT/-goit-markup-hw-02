@@ -5,7 +5,14 @@ body {
 ul {
   list-style: none;
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /*картинка не може бути більша ніж ширина блока*/
 img {
   max-width: 100%;
